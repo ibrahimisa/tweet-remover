@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Tweet Remover",
+  "version": "1.0",
+
+  "description": "Removes tweets of a user from feed",
+
+  "icons": {
+    "48": "icons/tweet-remover-icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/home"],
+      "js": ["index.js"]
+    }
+  ]
+}
