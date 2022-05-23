@@ -11,8 +11,18 @@
 
   "content_scripts": [
     {
-      "matches": ["*://twitter.com/home"],
-      "js": ["index.js"]
+      "matches": ["*://*.twitter.com/home"],
+      "run_at": "document_idle",
+      "js": ["content-script.js"]
     }
-  ]
+  ],
+
+  "permissions": ["storage"],
+
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "browser_styles": "true",
+    "default_title": "tweet remover",
+    "default_popup": "popup-ui/ui.html"
+  }
 }
