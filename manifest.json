@@ -6,7 +6,7 @@
   "description": "Removes tweets of a user from feed",
 
   "icons": {
-    "48": "icons/tweet-remover-icon.png"
+    "48": "icons/icon.png"
   },
 
   "content_scripts": [
