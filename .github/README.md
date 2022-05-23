@@ -6,6 +6,6 @@ this is helpful when you don't to see someone's tweet or their retweet but also 
 
 # TODO
 Extend tweet-remover to be able to:
--remove promoted tweets
--remove 'trends for you section'
--remove new tweets popup
++ remove promoted tweets
++ remove 'trends for you section'
++ remove new tweets popup
