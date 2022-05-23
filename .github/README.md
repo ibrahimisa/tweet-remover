@@ -9,3 +9,5 @@ Extend tweet-remover to be able to:
 + remove promoted tweets
 + remove 'trends for you section'
 + remove new tweets popup
++ show block on context menu
++ add action page on address bar
