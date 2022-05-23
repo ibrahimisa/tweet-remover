@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tweet Remover</title>
+  </head>
+  <body class="w-80">
+    <div class="p-4 font-mono text-lg bg-slate-900 flex flex-col">
+      <h2 class="font-bold text-3xl text-center text-orange-500 mb-2">
+        TWEET BLOCKER
+      </h2>
+      <form id="form" class="flex-row gap-y-2">
+        <div>
+          <input
+          type="text"
+          name="user-name"
+          placeholder="enter username or full name"
+          class="p-1 rounded-md w-full mb-2 text-xs"
+        />
+        </div>
+        <div>
+          <input type="checkbox" id="block-tweet" class="checked:bg-orange-600" checked />
+          <label for="block-tweet" class="text-orange-200">Block tweet</label>
+        </div>
+        <div>
+          <input type="checkbox" id="block-retweet" class="checked:bg-orange-600"/>
+          <label for="block-retweet" class="text-orange-200">Block retweet</label>
+        </div>
+        <div class="flex flex-row justify-between">
+          <button type="submit" class="bg-red-400 py-1 px-3 rounded hover:bg-red-600 hover:text-gray-100">block</button>
+          <button id="blocked-list-btn" class="text-blue-400 text-sm hover:text-blue-100">blocked list→</button>
+        </div> 
+      </form>
+      <div id="blocked-list" class="hidden text-amber-400"></div>
+      <p id="info" class="text-green-600 text-xs mt-1"></p>
+    </div>
+
+    <script src="./popup-script.js"></script>
+  </body>
+</html>
