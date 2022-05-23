@@ -18,7 +18,7 @@
           type="text"
           name="user-name"
           placeholder="enter username or full name"
-          class="p-1 rounded-md w-full mb-2 text-xs"
+          class="p-2 text-sm rounded-md w-full mb-2"
         />
         </div>
         <div>
@@ -31,7 +31,7 @@
         </div>
         <div class="flex flex-row justify-between">
           <button type="submit" class="bg-red-400 py-1 px-3 rounded hover:bg-red-600 hover:text-gray-100">block</button>
-          <button id="blocked-list-btn" class="text-blue-400 text-sm hover:text-blue-100">blocked list→</button>
+          <a id="blocked-list-btn" class="text-blue-400 text-sm hover:text-blue-100 py-2 underline underline-offset-2 cursor-pointer">see blocked users→</a>
         </div> 
       </form>
       <div id="blocked-list" class="hidden text-amber-400"></div>

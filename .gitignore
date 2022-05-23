@@ -1,0 +1,5 @@
+.pnpm-debug.log
+note
+popup-ui/node_modules
+popup-ui/input.css
+pnpm-lock.yaml
